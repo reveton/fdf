@@ -50,5 +50,6 @@ void    fill_struct(t_fdf **cord)
     tmp->d[0] = 0;
     tmp->mlx = 0;
     tmp->win = 0;
+    tmp->upz = 0;
     *cord = tmp;
 }

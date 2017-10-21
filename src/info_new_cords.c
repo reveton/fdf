@@ -15,6 +15,8 @@ void    info(t_fdf *fdf)
     mlx_string_put(fdf->mlx, fdf->win, 80, 150, 0xFFFF00, "+ -");
     mlx_string_put(fdf->mlx, fdf->win, 20, 180, 0x00FFFFFF, "QUIT:");
     mlx_string_put(fdf->mlx, fdf->win, 80, 180, 0xFFFF00, "ESC");
+    mlx_string_put(fdf->mlx, fdf->win, 20, 210, 0x00FFFFFF, "RAISE AND DECRASE Z_CORD:");
+    mlx_string_put(fdf->mlx, fdf->win, 280, 210, 0xFFFF00, "C,V");
 }
 
 void    generate_new_cords(t_fdf *cord)

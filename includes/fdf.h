@@ -37,6 +37,7 @@ typedef struct  s_fdf
     double  angle[3];
     int         shift_x;
     int         shift_y;
+    int     upz;
     int     d[10];
 }               t_fdf;
 

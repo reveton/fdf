@@ -39,6 +39,10 @@ void    def_parameters(int keycode, t_fdf *fdf)
         fdf->shift_x = 0;
         fdf->shift_y = 0;
     }
+    if (keycode == 8)
+        fdf->upz += 10;
+    if (keycode == 9)
+        fdf->upz -= 10;
 }
 
 int key_hook(int keycode, t_fdf *fdf)

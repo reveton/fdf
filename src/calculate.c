@@ -7,7 +7,7 @@ double calc_x_p1(t_coords *p1, t_fdf **fdf)
     double tmp;
 
     x0 = p1->x_coords * (*fdf)->scale;
-    z0 = p1->cord_z * (*fdf)->scale;
+    z0 = p1->cord_z * (*fdf)->upz;
     tmp = x0;
     x0 = tmp * cos((*fdf)->angle[1]) + z0 * sin((*fdf)->angle[1]);
     z0 = (-tmp * sin((*fdf)->angle[1]) + z0 * cos((*fdf)->angle[1]));
@@ -21,7 +21,7 @@ double calc_y_p1(t_coords *p1, t_fdf **fdf)
     double tmp;
 
     y0 = p1->y_coords * (*fdf)->scale;
-    z0 = p1->cord_z * (*fdf)->scale;
+    z0 = p1->cord_z * (*fdf)->upz;
     tmp = y0;
     y0 = (tmp * cos((*fdf)->angle[0]) + z0 * sin((*fdf)->angle[0]));
     z0 = (-tmp * sin((*fdf)->angle[0]) + z0 * cos((*fdf)->angle[0]));
@@ -35,7 +35,7 @@ double calc_x_p2(t_coords *p2, t_fdf **fdf)
     double tmp;
 
     x1 = p2->x_coords * (*fdf)->scale;
-    z1 = p2->cord_z * (*fdf)->scale;
+    z1 = p2->cord_z * (*fdf)->upz;
     tmp = x1;
     x1 = tmp * cos((*fdf)->angle[1]) + z1 * sin((*fdf)->angle[1]);
     z1 = (-tmp * sin((*fdf)->angle[1]) + z1 * cos((*fdf)->angle[1]));
@@ -49,7 +49,7 @@ double calc_y_p2(t_coords *p2, t_fdf **fdf)
     double tmp;
 
     y1 = p2->y_coords * (*fdf)->scale;
-    z1 = p2->cord_z * (*fdf)->scale;
+    z1 = p2->cord_z * (*fdf)->upz;
     tmp = y1;
     y1 = (tmp * cos((*fdf)->angle[0]) + z1 * sin((*fdf)->angle[0]));
     z1 = (-tmp * sin((*fdf)->angle[0]) + z1 * cos((*fdf)->angle[0]));
